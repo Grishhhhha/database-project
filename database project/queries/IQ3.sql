@@ -1,0 +1,21 @@
+SQL> SELECT i.Name, p.Salary
+  2  FROM Instructor i
+  3  JOIN Position p
+  4  ON  i.Instructor_Position = p.Instructor_Position
+  5  WHERE LOWER(i.Name) LIKE '%s%'
+  6  AND p.Salary > 50000;
+
+NAME                     SALARY                                                                                                                                                                                                                                                                                                                                                                                 
+-------------------- ----------                                                                                                                                                                                                                                                                                                                                                                                 
+Yurisha Banjade           93500                                                                                                                                                                                                                                                                                                                                                                                 
+Umesh Nepal               93500                                                                                                                                                                                                                                                                                                                                                                                 
+Saroj Yadav               91000                                                                                                                                                                                                                                                                                                                                                                                 
+Biwash Adhikari           95000                                                                                                                                                                                                                                                                                                                                                                                 
+Supriya Shrestha          90500                                                                                                                                                                                                                                                                                                                                                                                 
+Sonique Adhikari          95000                                                                                                                                                                                                                                                                                                                                                                                 
+Surendra KC               93500                                                                                                                                                                                                                                                                                                                                                                                 
+Sangita Poudyal           90500                                                                                                                                                                                                                                                                                                                                                                                 
+
+8 rows selected.
+
+SQL> SPOOL OFF;
